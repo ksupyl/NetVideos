@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1194px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 34px;
+    margin-bottom: 12px;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo h1 {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.header-logo p {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.header-controls a {
+    color: rgb(0, 0, 0);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.header-controls a:hover {
+    color: rgb(41, 158, 169);
+}
+
+.header-controls--mobile {
+    display: none;
+    align-self: flex-start;
+}
+
+.search-box {
+    height: 50px;
+    padding: 3px;
+    border-radius: 5px;
+    background: rgb(41, 158, 169);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.search-box input {
+    height: 100%;
+    min-width: 0;
+    padding: 0 30px;
+    flex-grow: 1;
+
+    border: none;
+    outline: none;
+
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+}
+
+.search-box button {
+    height: 100%;
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgb(41, 158, 169);
+    border: none;
+    color: rgb(255, 255, 255);
+
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    cursor: pointer;
+}
+
+@media (max-width: 786px) {
+    .header-controls {
+        display: none;
+    }
+
+    .header-controls--mobile {
+        display: block;
+    }
+
+    .search-box input {
+        padding: 0 15px;
+    }
+}
